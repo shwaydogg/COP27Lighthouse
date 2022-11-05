@@ -1,0 +1,266 @@
+@font-face {
+  font-family: frontpage;
+  src: url('frontpageneue.otf') format('opentype');
+}
+@font-face {
+  font-family: gothamnarrowblack;
+  src: url('gothamnarrowblack.otf') format('opentype');
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #222;
+  font-family: gothamnarrowblack;
+  font-size: 64px;
+  line-height: 64px;
+}
+#controls {
+  position: absolute;
+  top: 850px;
+  height: 108px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#controls section {
+  display: flex;
+  width: 416px;
+}
+button {
+  font-size: 24px;
+  flex-basis: 6em;
+  flex-grow: 1;
+  height: 48px;
+}
+button#bottom10 {
+  position: absolute;
+  left: 448px;
+  width: 40px;
+  top: 749px;
+  height: 83px;
+  text-align: right;
+}
+button#bottom15 {
+  position: absolute;
+  left: 448px;
+  width: 40px;
+  top: 707px;
+  height: 125px;
+  text-align: right;
+}
+section.level {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  background: #000;
+}
+#upper {
+  left: 0;
+  top: 0;
+}
+#lower {
+  left: 500px;
+  top: 0;
+}
+#status {
+  position: absolute;
+  left: 500px;
+  width: 832px;
+  top: 850px;
+  height: 108px;
+  background: #000;
+  color: #0f0;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 28px;
+  padding: 6px;
+  line-height: 1;
+  white-space: pre;
+  overflow: hidden;
+}
+
+body.fullscreen #upper {
+  transform-origin: top left;
+  transform: scaleX(2);
+}
+body.fullscreen #lower {
+  left: 0;
+  top: 832px;
+}
+body.fullscreen #controls {
+  left: 850px;
+  top: 0;
+}
+body.fullscreen #status {
+  left: 850px;
+  top: 128px;
+}
+body.fullscreen #bottom15, body.fullscreen .shade {
+  display: none;
+}
+
+.row {
+  transition: opacity 250ms ease-out;
+  white-space: pre;
+}
+.widget {
+  white-space: normal;
+}
+.hidden {
+  opacity: 0;
+  transition: none;
+}
+.omitted {
+  display: none;
+}
+.panel {
+  padding: 12px 0;
+  text-align: center;
+  z-index: 2;
+}
+.panel.upper {
+  width: 208px;
+  height: 832px;
+}
+.panel.lower {
+  width: 416px;
+  height: 832px;
+  overflow: hidden;
+  color: white;
+}
+#lower .shade {
+  position: absolute;
+  top: 85%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #333;
+  border-top: 2px solid #000;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 3;
+}
+.media {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+#upper video, #upper img {
+  width: 416px;
+  height: 832px;
+}
+#lower video, #lower img {
+  width: 832px;
+  height: 832px;
+}
+.digit {
+  display: inline-block;
+  text-align: center;
+  width: 1ch;
+  margin: 0 -0.03ch;
+}
+.panel[theme='acred'] {
+  background: #eb1c23;
+}
+.panel[theme='acblue'] {
+  background: #4aa1cc;
+}
+.panel[theme='red'] {
+  background: #c52d38;
+}
+.panel[theme='blue'] {
+  background: #5181a3;
+}
+.panel[theme='lightblue'] {
+  background: #95bee6;
+}
+.strike {
+  text-decoration: line-through;
+}
+.time-part {
+  text-align: left;
+  padding-left: 103px;
+}
+.repeated-hashtag {
+  font-size: 60px;
+}
+.large {  /* 3/2 size */
+  font-size: 148px;
+  line-height: 144px;
+  height: 132px;
+}
+.double {  /* 2x size */
+  font-size: 128px;
+  line-height: 134px;
+  height: 128px;
+}
+.double-lower {
+  font-size: 128px;
+  line-height: 156px;
+  height: 128px;
+}
+.double-raise {
+  font-size: 128px;
+  line-height: 120px;
+  height: 128px;
+}
+.with-superscript {
+  height: 64px;
+  margin: -19px 0 19px 0;
+}
+.space-after {
+  padding-bottom: 32px;
+}
+.inverse {
+  transition: opacity 750ms;
+  background: #fff;
+  line-height: 70px;
+  height: 64px;
+  margin: 0 12px;
+}
+.inverse.hidden {
+  transition: none;
+}
+[theme='acred'] .inverse {
+  color: #eb1c23;
+}
+[theme='acblue'] .inverse {
+  color: #4aa1cc;
+}
+[theme='red'] .inverse {
+  color: #c52d38;
+}
+[theme='blue'] .inverse {
+  color: #5181a3;
+}
+[theme='lightblue'] .inverse {
+  color: #95bee6;
+}
+.struck {
+  display: inline-block;
+  position: relative;
+}
+.striker {
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  top: 43%;
+  bottom: 43%;
+  background: #eb1c23;
+  background: #c52d38;
+  transition: right 300ms ease-in 400ms;
+}
+.hidden .striker {
+  right: 110%;
+}
+#delay-denial-widget .row {
+  font-size: 116px;
+  line-height: 105px;
+  height: 116px;
+}

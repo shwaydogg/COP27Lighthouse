@@ -1,0 +1,120 @@
+<meta charset="utf-8">
+<link rel=stylesheet href="style.css">
+<script src="jquery-3.6.1.slim.min.js"></script>
+<script src="luxon.min.js"></script>
+
+<body>
+  <div id="controls">
+    <section>
+      <button onclick="toggleFullscreen()" type=button>Full screen</button>
+      <button onclick="restart()" type=button>Restart</button>
+    </section>
+    <section>
+      <button onclick="previousSlide()" type=button>Previous</button>
+      <button onclick="holdCurrentSlide()" type=button>Hold</button>
+      <button onclick="nextSlide()" type=button>Next</button>
+    </section>
+  </div>
+  <button id="bottom15" onclick="$('.shade').toggleClass('omitted')" type=button>15<br>%</button>
+  <section class="level" id=upper>
+    <div class="media"></div>
+    <div id="upper-left" class="panel upper left">
+    </div>
+    <div id="upper-right" class="panel upper right">
+    </div>
+  </section>
+
+  <section class="level" id=lower>
+    <div class="shade omitted"></div>
+    <div class="media"></div>
+    <div id="lower-left" class="panel lower left">
+    </div>
+    <div id="lower-right" class="panel lower right">
+    </div>
+  </section>
+
+  <div id="assets" class="omitted">
+    <video id="clock" loop muted>
+      <source src="clock.mp4" type="video/mp4">
+    </video>
+    <video id="lighthouse-upper" loop muted>
+      <source src="lighthouse-upper.mp4" type="video/mp4">
+    </video>
+    <img id="lighthouse-lower" src="lighthouse-lower.jpg">
+    <video id="stripes-upper" loop muted>
+      <source src="stripes-upper.mp4" type="video/mp4">
+    </video>
+    <video id="stripes-lower" loop muted>
+      <source src="stripes-lower.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div id="widgets" class="omitted">
+    <div id="deadline-widget" class="widget">
+      <div id="num-years" class="double-lower"></div>
+      <div id="label-years">YEARS</div>
+      <div id="num-days" class="double-lower">
+        <span id="days-100" class="digit"></span><span id="days-10" class="digit"></span><span id="days-1" class="digit"></span>
+      </div>
+      <div id="label-days" class="space-after">DAYS</div>
+      <div id="hours" class="time-part">
+        <span id="hours-10" class="digit"></span><span id="hours-1" class="digit"></span> <span id="label-hours">HRS</span>
+      </div>
+      <div id="minutes" class="time-part">
+        <span id="minutes-10" class="digit"></span><span id="minutes-1" class="digit"></span> <span id="label-minutes">MIN</span>
+      </div>
+      <div id="seconds" class="time-part">
+        <span id="seconds-10" class="digit"></span><span id="seconds-1" class="digit"></span> <span id="label-seconds">SEC</span>
+      </div>
+    </div>
+
+    <div id="renewables-widget" class="widget space-after">
+      <div id="renewables-part1" class="double-lower">
+        <span id="renewables-10" class="digit"></span><span id="renewables-1" class="digit"></span>.
+      </div>
+      <div id="renewables-part2">
+        <span id="renewables-01" class="digit"></span><span id="renewables-001" class="digit"></span><span id="renewables-0001" class="digit"></span><span id="renewables-00001" class="digit"></span><span id="renewables-000001" class="digit"></span><span id="renewables-0000001" class="digit"></span><span id="renewables-00000001" class="digit"></span><span id="renewables-000000001" class="digit"></span><span id="renewables-0000000001" class="digit"></span>%
+      </div>
+    </div>
+
+    <div id="indigenous-land-widget" class="widget space-after">
+      <div id="indigenous-part1" class="double-lower">43.5</div>
+      <div id="indigenous-part2" class="with-superscript">MILLION KM<sup>2</sup></div>
+    </div>
+
+    <div id="loss-damage-widget" class="widget space-after">
+      <div id="loss-part1" class="double-lower">
+        $<span id="loss-10" class="digit"></span><span id="loss-1" class="digit"></span>.
+      </div>
+      <div id="loss-part2">
+        <span id="loss-01" class="digit"></span><span id="loss-001" class="digit"></span><span id="loss-0001" class="digit"></span> <span id="loss-00001" class="digit"></span><span id="loss-000001" class="digit"></span><span id="loss-0000001" class="digit"></span>
+      </div>
+      <div id="loss-part3">
+        <span id="loss-00000001" class="digit"></span><span id="loss-000000001" class="digit"></span><span id="loss-0000000001" class="digit"></span> <span id="loss-00000000001" class="digit"></span><span id="loss-000000000001" class="digit"></span><span id="loss-0000000000001" class="digit"></span>
+      </div>
+      <div id="loss-part4">TRILLION</div>
+    </div>
+
+    <div id="loss8-widget" class="widget space-after">
+      <div id="loss8-part1" class="double-lower">
+        $<span id="loss8-10" class="digit"></span><span id="loss8-1" class="digit"></span>.
+      </div>
+      <div id="loss8-part2">
+        <span id="loss8-01" class="digit"></span><span id="loss8-001" class="digit"></span><span id="loss8-0001" class="digit"></span><span id="loss8-00001" class="digit"></span><span id="loss8-000001" class="digit"></span><span id="loss8-0000001" class="digit"></span><span id="loss8-00000001" class="digit"></span><span id="loss8-000000001" class="digit"></span>
+      </div>
+      <div id="loss-part4">TRILLION</div>
+    </div>
+
+    <div id="delay-denial-widget" class="widget">
+      <div class="row">DELAY</div>
+      <div class="row">=</div>
+      <div class="row">DENIAL</div>
+    </div>
+  </div>
+
+  <div id="status"></div>
+</body>
+
+<script src="widgets.js"></script>
+<script src="slides.js"></script>
+<script src="engine.js"></script>
