@@ -88,17 +88,32 @@ section.level {
   overflow: hidden;
 }
 .fullscreen #greg{
-  transform: scale(2.3076,.43269 );
+  transform: scale(2.3076,.5192307);
+  /*transform: scale(4.6,.8);*/
   transform-origin: top left;
 }
+body.fullscreen .media.left{
+  left:104px;
+  width:208px;
+  overflow: hidden;
+}
+
+body.fullscreen .media.right{
+  left:524px;
+  width:208px;
+  overflow: hidden;
+
+}
+
 
 body.fullscreen #upper {
   transform-origin: top left;
-  transform: scaleY(1.5);
+  transform: scaleY(1.25);
 }
 body.fullscreen #lower {
   left: 0;
-  top: 1664px;
+  top: 1144px;
+  transform: scaleY(1.25);
 }
 body.fullscreen #controls {
   left: 0;
@@ -111,7 +126,7 @@ body.fullscreen #status {
 body.fullscreen #bottom15, body.fullscreen .shade {
   display: none;
 }
-
+/*
 body.fullscreen section.level#lower, body.fullscreen section.level#upper{
   position: relative;
   top:auto;
@@ -119,6 +134,7 @@ body.fullscreen section.level#lower, body.fullscreen section.level#upper{
   right:auto;
   bottom:auto;
 }
+*/
 
 .row {
   transition: opacity 250ms ease-out;
