@@ -61,6 +61,7 @@ section.level {
   display: flex;
   position: absolute;
   background: #000;
+  margin-bottom: 416px;
 }
 #upper {
   left: 0;
@@ -88,12 +89,12 @@ section.level {
 }
 .fullscreen #greg{
   transform: scale(2.3076,.43269 );
-  transform-origin: top left;  
+  transform-origin: top left;
 }
 
 body.fullscreen #upper {
   transform-origin: top left;
-  transform: scale(2);
+  transform: scaleY(1.5);
 }
 body.fullscreen #lower {
   left: 0;
@@ -109,6 +110,14 @@ body.fullscreen #status {
 }
 body.fullscreen #bottom15, body.fullscreen .shade {
   display: none;
+}
+
+body.fullscreen section.level#lower, body.fullscreen section.level#upper{
+  position: relative;
+  top:auto;
+  left:auto;
+  right:auto;
+  bottom:auto;
 }
 
 .row {
