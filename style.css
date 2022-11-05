@@ -19,12 +19,15 @@ body {
 }
 #controls {
   position: absolute;
-  top: 850px;
+  top: 0;
   height: 108px;
   text-align: right;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  dex: 2;
+  left:0;
+  z-index: 100;
 }
 #controls section {
   display: flex;
@@ -86,14 +89,14 @@ section.level {
 
 body.fullscreen #upper {
   transform-origin: top left;
-  transform: scaleX(2);
+  transform: scale(2);
 }
 body.fullscreen #lower {
   left: 0;
-  top: 832px;
+  top: 1664px;
 }
 body.fullscreen #controls {
-  left: 850px;
+  left: 0;
   top: 0;
 }
 body.fullscreen #status {
