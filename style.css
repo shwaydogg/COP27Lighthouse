@@ -86,6 +86,10 @@ section.level {
   white-space: pre;
   overflow: hidden;
 }
+.fullscreen #greg{
+  transform: scale(2.3076,.43269 );
+  transform-origin: top left;  
+}
 
 body.fullscreen #upper {
   transform-origin: top left;
