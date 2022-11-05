@@ -5,7 +5,7 @@ var slides = [
     hold: 1,
     left: {theme: '', beats: []},
     right: {theme: '', beats: ['FOR', 'CENTURIES']},
-    media: {upper: lighthouseUpperVideo, lower: lighthouseLowerImage}
+    media: {upper: lighthouseUpperVideo, upper2: lighthouseUpperVideo2, lower: lighthouseLowerImage}
   },
   {
     hold: 1,
@@ -62,14 +62,14 @@ var slides = [
     duration: 60,
     left: {theme: '', beats: []},
     right: {theme: '', beats: []},
-    media: {upper: stripesUpperVideo, lower: stripesLowerVideo}
+    media: {upper: stripesUpperVideo, upper2: stripesUpperVideo2, lower: stripesLowerVideo}
   },
 
   {
     duration: 10,
     left: {theme: 'red', beats: [repeatHashtag('#ClimateClock')]},
     right: {theme: 'blue', beats: [repeatHashtag('#ActInTime')]},
-    media: {upper: clockVideo},
+    media: {upper: clockVideo, upper2: clockVideo2},
   },
   {
     left: {theme: 'red', beats: ['THE', 'SCIENCE', 'IS', 'CLEAR', pause]},

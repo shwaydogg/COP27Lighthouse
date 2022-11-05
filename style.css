@@ -94,13 +94,13 @@ section.level {
 }
 body.fullscreen .media.left{
   left:104px;
-  width:208px;
+  width:416px;
   overflow: hidden;
 }
 
 body.fullscreen .media.right{
-  left:524px;
-  width:208px;
+  left:314px;
+  width:416px;
   overflow: hidden;
 
 }

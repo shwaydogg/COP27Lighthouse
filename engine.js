@@ -53,7 +53,7 @@ function getDuration(slide) {
   return (slide.duration * 1000) || (
     (
       (slide.left.beats.length ? 1 : 0) + slide.left.beats.length +
-      (slide.right.beats.length ? 1 : 0) + slide.right.beats.length 
+      (slide.right.beats.length ? 1 : 0) + slide.right.beats.length
     ) * 500 +
     (slide.hold || DEFAULT_HOLD) * 1000
   );
@@ -93,8 +93,11 @@ function tick() {
       $('#upper .media').empty();
       $('#lower .media').empty();
       if (slide.media.upper) {
-        $('#upper .media').append(slide.media.upper);
+        $('#upper .media.left').append(slide.media.upper);
+        $('#upper .media.right').append(slide.media.upper2);
+        debugger;
         playVideo(slide.media.upper);
+        playVideo(slide.media.upper2);
       }
       if (slide.media.lower) {
         $('#lower .media').append(slide.media.lower);
