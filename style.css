@@ -205,9 +205,15 @@ body.fullscreen section.level#lower, body.fullscreen section.level#upper{
 }
 .panel[theme='red'] {
   background: #c52d38;
+  background-image: url("BackgroundRed.png");
+  background-size:cover;
+
 }
 .panel[theme='blue'] {
   background: #5181a3;
+  background-image: url("BackgroundBlue.png");
+  background-size:cover;
+
 }
 .panel[theme='lightblue'] {
   background: #95bee6;
