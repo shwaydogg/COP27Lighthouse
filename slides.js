@@ -3,59 +3,59 @@ const DEFAULT_HOLD = 5;
 var slides = [
   {
     hold: 1,
-    left: {theme: '', beats: []},
-    right: {theme: '', beats: ['FOR', 'CENTURIES']},
+    left: {theme: 'lighthouse', beats: []},
+    right: {theme: 'lighthouse', beats: ['FOR', 'CENTURIES']},
     media: {upper: lighthouseUpperVideo, upper2: lighthouseUpperVideo2, lower: lighthouseLowerImage}
   },
   {
     hold: 1,
-    left: {theme: '', beats: []},
-    right: {theme: '', beats: ['THE GREAT', 'LIGHTHOUSE', 'AT', 'ALEXANDRIA']},
+    left: {theme: 'lighthouse', beats: []},
+    right: {theme: 'lighthouse', beats: ['THE GREAT', 'LIGHTHOUSE', 'AT', 'ALEXANDRIA']},
   },
   {
     hold: 1,
-    left: {theme: '', beats: []},
-    right: {theme: '', beats: ['LIT BY FIRE']},
+    left: {theme: 'lighthouse', beats: []},
+    right: {theme: 'lighthouse', beats: ['LIT BY FIRE']},
   },
   {
     hold: 3,
-    left: {theme: '', beats: []},
-    right: {theme: '', beats: ['GUIDED', 'SHIPS', 'THROUGH', 'STORMS', 'TO SAFE', 'HARBOR']},
+    left: {theme: 'lighthouse', beats: []},
+    right: {theme: 'lighthouse', beats: ['GUIDED', 'SHIPS', 'THROUGH', 'STORMS', 'TO SAFE', 'HARBOR']},
   },
   {
     hold: 3,
-    left: {theme: '', beats: []},
-    right: {theme: '', beats: ['TODAY,', 'WE FACE', 'THE', 'STORMS &', 'INJUSTICE', 'OF', 'CLIMATE', 'CHANGE']}
+    left: {theme: 'lighthouse', beats: []},
+    right: {theme: 'lighthouse', beats: ['TODAY,', 'WE FACE', 'THE', 'STORMS &', 'INJUSTICE', 'OF', 'CLIMATE', 'CHANGE']}
   },
   {
     hold: 2,
-    left: {theme: '', beats: []},
-    right: {theme: '', beats: ['WE MUST', 'SHARPLY', 'CHANGE', 'COURSE']},
+    left: {theme: 'lighthouse', beats: []},
+    right: {theme: 'lighthouse', beats: ['WE MUST', 'SHARPLY', 'CHANGE', 'COURSE']},
   },
   {
     hold: 2,
-    left: {theme: '', beats: []},
-    right: {theme: '', beats: ['THE LIGHT', 'WE MUST', 'FOLLOW:']},
+    left: {theme: 'lighthouse', beats: []},
+    right: {theme: 'lighthouse', beats: ['THE LIGHT', 'WE MUST', 'FOLLOW:']},
   },
   {
     hold: 4,
-    left: {theme: '', beats: []},
-    right: {theme: '', beats: ['SCIENCE', 'JUSTICE', 'ECOLOGICAL', 'WISDOM', '& A', 'COMMITMENT', 'TO REAL', 'SYSTEMIC', 'SOLUTIONS']}
+    left: {theme: 'lighthouse', beats: []},
+    right: {theme: 'lighthouse', beats: ['SCIENCE', 'JUSTICE', 'ECOLOGICAL', 'WISDOM', 'AND A', 'COMMITMENT', 'TO REAL', 'SYSTEMIC', 'SOLUTIONS']}
   },
   {
     hold: 1,
-    left: {theme: '', beats: []},
-    right: {theme: '', beats: ['WE TOO', 'CAN', 'REACH', 'THE', 'SAFE', 'HARBOR']},
+    left: {theme: 'lighthouse', beats: []},
+    right: {theme: 'lighthouse', beats: ['WE TOO', 'CAN', 'REACH', 'THE', 'SAFE', 'HARBOR']},
   },
   {
     hold: 2,
-    left: {theme: '', beats: []},
-    right: {theme: '', beats: ['OF A', 'JUST AND', 'LIVABLE', 'WORLD']},
+    left: {theme: 'lighthouse', beats: []},
+    right: {theme: 'lighthouse', beats: ['OF A', 'JUST AND', 'LIVABLE', 'WORLD']},
   },
   {
     hold: 7,
-    left: {theme: '', beats: []},
-    right: {theme: '', beats: ['BUT', 'ONLY', 'IF', 'WE', '#ActInTime']},
+    left: {theme: 'lighthouse', beats: []},
+    right: {theme: 'lighthouse', beats: ['BUT', 'ONLY', 'IF', 'WE', '#ActInTime']},
   },
 
   {

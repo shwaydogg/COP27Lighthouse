@@ -313,3 +313,7 @@ body.fullscreen section.level#lower, body.fullscreen section.level#upper{
 #controls {
   display:none;
 }
+
+.lower.panel[theme='lighthouse']{
+  padding-top:156px;
+}
