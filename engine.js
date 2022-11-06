@@ -95,7 +95,6 @@ function tick() {
       if (slide.media.upper) {
         $('#upper .media.left').append(slide.media.upper);
         $('#upper .media.right').append(slide.media.upper2);
-        debugger;
         playVideo(slide.media.upper);
         playVideo(slide.media.upper2);
       }

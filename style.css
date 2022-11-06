@@ -296,3 +296,12 @@ body.fullscreen section.level#lower, body.fullscreen section.level#upper{
   line-height: 105px;
   height: 116px;
 }
+
+#key {
+  top: 900px;
+  position: absolute;
+}
+
+#controls {
+  display:none;
+}
