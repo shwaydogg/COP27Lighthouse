@@ -296,7 +296,9 @@ body.fullscreen section.level#lower, body.fullscreen section.level#upper{
   line-height: 105px;
   height: 116px;
 }
-
+.fullscreen #key {
+  display:none;
+}
 #key {
   top: 900px;
   position: absolute;
