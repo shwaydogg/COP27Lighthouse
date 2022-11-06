@@ -86,7 +86,7 @@ var slides = [
   {
     duration: 20,
     left: {theme: 'red', beats: [inverse('DEADLINE'), deadline, pause]},
-    right: {theme: 'red', beats: ['THIS IS OUR', 'WINDOW OF', doubleRaise('HOPE'), spaceAfter(''), pause, 'LET\'S', '#ActInTime', 'TO STAY', 'BELOW', '1.5° C']}
+    right: {theme: 'blue', beats: ['THIS IS OUR', 'WINDOW OF', doubleRaise('HOPE'), spaceAfter(''), pause, 'LET\'S', '#ActInTime', 'TO STAY', 'BELOW', '1.5° C']}
   },
   {
     left: {theme: 'red', beats: ['THE', 'EARTH', 'HAS A', 'DEADLINE']},
@@ -131,7 +131,7 @@ var loop = [
   {
     duration: 30,
     left: {theme: 'red', beats: [inverse('DEADLINE'), deadline, pause]},
-    right: {theme: 'red', beats: ['THIS IS OUR', 'WINDOW OF', doubleRaise('HOPE'), spaceAfter(''), pause, 'LET\'S', '#ActInTime', 'TO STAY', 'BELOW', '1.5° C']}
+    right: {theme: 'blue', beats: ['THIS IS OUR', 'WINDOW OF', doubleRaise('HOPE'), spaceAfter(''), pause, 'LET\'S', '#ActInTime', 'TO STAY', 'BELOW', '1.5° C']}
   }
 ];
 
