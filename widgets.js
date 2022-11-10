@@ -143,8 +143,8 @@ indigenousLand.repr = '<indigenousLand>';
 var LOSS_DAMAGE = {
   refMillis: luxon.DateTime.fromISO('2020-01-01T00:00:00Z').toMillis(),
 
-  initial: 297540000000000000000000n,
-  rate: 471408520521309n,
+  initial: 277340000000000000000000n,
+  rate: 450367832241386n,
 
   decimals: 12,
   shift: 22
